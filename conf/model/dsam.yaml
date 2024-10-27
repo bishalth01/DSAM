@@ -1,0 +1,77 @@
+name: SpatioTemporalModel
+activation: relu
+param_conv_strategy: 'tcn_entire'
+# batch_size: 16
+channels_conv: 8
+early_stop_steps: 35
+final_mlp_layers: 1
+fold_num: 1
+# lr: 0.0006086956257343886
+# lr_scheduler: manual
+n_clustered_communities: 7
+# num_epochs: 150
+# num_gnn_layers: 1
+num_nodes: 100
+optim: Adam
+optimiser: adam
+pnapoolratio: 0.3
+pooling: concat
+sweep_type: brain_gnn
+target_var: gender
+tcn_depth: 3
+tcn_final_transform_layers: 1
+tcn_hidden_units: 8
+tcn_norm_strategy:  batchnorm # weight
+temporal_embed_size: 32
+
+
+#No change in hyperparams
+lamb0: 1
+lamb1: 0
+lamb2: 0
+lamb3: 0.1
+lamb4: 0
+lamb5: 0
+layer: 2
+use_ema: false
+nodemodel_aggr: all
+nodemodel_layers: 2
+nodemodel_scalers: none
+normalisation: subject_norm
+tcn_kernel: 7
+tcn_kernel1: 7
+tcn_kernel2: 9
+tcn_kernel3: 7
+tcn_kernel4: 5
+
+
+#Hyperparameters
+#For constant or dynamic edges
+# dynamic: True
+# threshold: 100
+# timepoints_attnhead: 10
+# totalwarmupsteps: 0
+# weight_decay: 5.524418363477552e-07
+# n_fc_layers: ["32,512"]
+# n_layers: ["32,32"]
+# fnc_attnhead: 16
+# fnc_embed_dim: 256
+# fc_dropout: 0.44733910594402415
+# dropout: 0.2
+# bgnnratio:  0.5477107284925589
+# attentionthreshold: 80
+
+#For constant best score
+dynamic: False
+threshold: 30
+timepoints_attnhead: 2
+totalwarmupsteps: 0
+weight_decay: 0.0001
+n_fc_layers: ["32, 512"]
+n_layers: ["32,32"]
+fnc_attnhead: 4
+fnc_embed_dim: 128
+fc_dropout: 0.323
+dropout: 0.323
+bgnnratio: 0.85   #0.0 is lower
+attentionthreshold: 10

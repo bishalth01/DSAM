@@ -1,0 +1,31 @@
+name: BrainGNN
+# batch_size: 16
+#Config params
+bgnnratio: 0.5
+dropout: 0.5
+early_stop_steps: 35
+fc_dropout: 0.5
+final_mlp_layers: 2
+n_clustered_communities: 7
+n_fc_layers: "512"
+n_layers: "32,32"
+num_nodes: 100
+
+pooling: concat
+sweep_type: brain_gnn
+target_var: gender
+
+time_length: 1200
+
+weight_decay: 0.08987196210260055
+dynamic: False
+threshold: 100
+
+#No change in hyperparams
+lamb0: 1
+lamb1: 0
+lamb2: 0
+lamb3: 0.1
+lamb4: 0
+lamb5: 0
+layer: 2

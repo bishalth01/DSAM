@@ -1,0 +1,14 @@
+name: abcd
+batch_size: 32
+test_batch_size: 32
+val_batch_size: 32
+train_set: 0.7
+time_points: 360
+val_set: 0.15
+node_feature: /data/users3/bthapaliya/BrainNetworkTransformer-main/abcd_inputs/node_features.npy
+time_seires: /data/users3/bthapaliya/BrainNetworkTransformer-main/abcd_inputs/timeseries_data.npy
+node_id: /data/users3/bthapaliya/BrainNetworkTransformer-main/abcd_inputs/timeseriesIds.npy
+seires_id: /data/users3/bthapaliya/BrainNetworkTransformer-main/abcd_inputs/timeseriesIds.npy
+label: /data/users3/bthapaliya/BrainNetworkTransformer-main/abcd_inputs/genderlabels.npy
+drop_last: True
+stratified: False

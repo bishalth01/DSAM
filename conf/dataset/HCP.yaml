@@ -1,0 +1,18 @@
+name: hcp
+batch_size: 8
+test_batch_size: 8
+val_batch_size: 8
+train_set: 0.70
+val_set: 0.15
+time_points: 1200
+node_feature: /data/users3/bthapaliya/BrainNetworkTransformer-main/hcpinputs/hcpsFNCFiltered.npy
+time_seires: /data/users3/bthapaliya/BrainNetworkTransformer-main/hcpinputs/timeseriesdata.npy
+node_id: /data/users3/bthapaliya/BrainNetworkTransformer-main/hcpinputs/subjectIds.npy
+seires_id: /data/users3/bthapaliya/BrainNetworkTransformer-main/hcpinputs/subjectIds.npy
+label: /data/users3/bthapaliya/BrainNetworkTransformer-main/hcpinputs/genderLabels.npy
+drop_last: True
+stratified: False
+
+regression: False
+column: sex
+num_classes: 2

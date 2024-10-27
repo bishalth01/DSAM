@@ -1,0 +1,15 @@
+defaults:
+  - dataset: HCP
+  - model: dsam # brainnetcnn, fbnetgen, bnt, transformer, dsam, braingnn, gfine, thc, dism
+  - optimizer: adam
+  - training: basic_training
+  - datasz: 100p
+  - preprocess: non_mixup
+
+repeat_time: 1
+log_path: result
+save_learnable_graph: False
+
+# wandb
+wandb_entity: eggroup
+project: dsamgnnproject
