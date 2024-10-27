@@ -134,14 +134,6 @@ class BrainGNNDSAMTrain:
             top1 = accuracy(predict, label)[0]
             self.train_accuracy.update_with_weight(top1, label.shape[0])
 
-            # Optional: Print progress
-            if self.current_step % 40 == 0:
-                print(f"Step {self.current_step}: Classification Loss = {loss_c.item():.4f}")
-                # After loss.backward()
-                for name, param in self.model.named_parameters():
-                    if param.grad is  None:
-                        print(f"No Gradient for {name}")
-
     def test_per_epoch(self, dataloader, loss_meter, acc_meter):
         labels = []
         result = []
